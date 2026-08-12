@@ -28,35 +28,12 @@
         margin: 0;
         color: #4b5563;
       }
-      .error {
-        margin-top: 0.75rem;
-        color: #b91c1c;
-        font-weight: 600;
-      }
     </style>
   </head>
   <body>
     <main>
       <h1>Balancing Diamonds</h1>
       <p>The official website is live at balancingdiamonds.com.</p>
-      <p id="domain-error" class="error" hidden></p>
     </main>
-    <script>
-      (function () {
-        const allowedHosts = new Set([
-          "balancingdiamonds.com",
-          "www.balancingdiamonds.com",
-          "localhost",
-          "127.0.0.1",
-        ]);
-
-        if (!allowedHosts.has(window.location.hostname)) {
-          const errorNode = document.getElementById("domain-error");
-          errorNode.textContent =
-            "Error: The site is configured for balancingdiamonds.com. Please verify domain and DNS settings.";
-          errorNode.hidden = false;
-        }
-      })();
-    </script>
   </body>
 </html>
