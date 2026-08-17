@@ -1,18 +1,16 @@
-# balancing-diamonds
+# Balancing Diamonds
 
-Website of Balancing Diamonds.
+The WordPress edition of Balancing Diamonds, a founder-led editorial and lifestyle house devoted to the movement from performance to self-authorship.
 
-## Publishing
+## Repository structure
 
-This repository is configured to publish to GitHub Pages from the `main` branch using:
+- `index.html`: static visual preview for GitHub Pages.
+- `wordpress-theme/balancing-diamonds/`: complete WordPress theme source.
+- `downloads/balancing-diamonds.zip`: installable theme package for Spaceship WordPress.
 
-- `.github/workflows/deploy-pages.yml`
-- `CNAME` set to `balancingdiamonds.com`
+## Install
 
-### One-time GitHub settings
+Download the theme ZIP, then open **WordPress Admin > Appearance > Themes > Add New Theme > Upload Theme**. Activate the theme and use **Appearance > Maison Setup** to create the architecture from the Unified Master Blueprint.
 
-1. Open repository **Settings → Pages**
-2. Set **Source** to **GitHub Actions**
-3. Ensure your domain DNS points to GitHub Pages:
-   - Apex `balancingdiamonds.com` A records to GitHub Pages IPs
-   - `www` CNAME to `dgreen-cloud.github.io`
+The theme uses standard posts for essays, so Ulysses can publish directly into the Journal with categories, tags, excerpts, and featured images.
+

@@ -1,0 +1,96 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "760px",
+      "wideSize": "1380px"
+    },
+    "color": {
+      "custom": false,
+      "customGradient": false,
+      "defaultPalette": false,
+      "palette": [
+        { "slug": "parchment", "name": "Parchment", "color": "#f2eadc" },
+        { "slug": "paper", "name": "Paper", "color": "#fbf7ef" },
+        { "slug": "espresso", "name": "Espresso", "color": "#221b17" },
+        { "slug": "oxblood", "name": "Oxblood", "color": "#6f2630" },
+        { "slug": "navy", "name": "Library Navy", "color": "#173d4c" },
+        { "slug": "teal", "name": "Coastal Teal", "color": "#2f6f70" },
+        { "slug": "sea-glass", "name": "Sea Glass", "color": "#9db9b0" },
+        { "slug": "gold", "name": "Antique Gold", "color": "#9c8056" }
+      ]
+    },
+    "spacing": {
+      "units": ["px", "rem", "em", "%", "vw", "vh"],
+      "spacingSizes": [
+        { "slug": "20", "size": "0.75rem", "name": "Small" },
+        { "slug": "30", "size": "1.25rem", "name": "Medium" },
+        { "slug": "40", "size": "2rem", "name": "Large" },
+        { "slug": "50", "size": "4rem", "name": "Salon" },
+        { "slug": "60", "size": "7rem", "name": "Gallery" }
+      ]
+    },
+    "typography": {
+      "customFontSize": true,
+      "dropCap": true,
+      "fluid": true,
+      "fontFamilies": [
+        {
+          "slug": "editorial-serif",
+          "name": "Editorial Serif",
+          "fontFamily": "\"Iowan Old Style\", \"Baskerville\", \"Times New Roman\", serif"
+        },
+        {
+          "slug": "restrained-sans",
+          "name": "Restrained Sans",
+          "fontFamily": "\"Avenir Next\", Avenir, \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+        }
+      ],
+      "fontSizes": [
+        { "slug": "small", "size": "0.78rem", "name": "Small" },
+        { "slug": "medium", "size": "1.12rem", "name": "Body" },
+        { "slug": "large", "size": "1.55rem", "name": "Lede" },
+        { "slug": "x-large", "size": "2.6rem", "name": "Section" },
+        { "slug": "display", "size": "5rem", "name": "Display" }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#f2eadc",
+      "text": "#312923"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--editorial-serif)",
+      "fontSize": "1.12rem",
+      "lineHeight": "1.8"
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--editorial-serif)",
+          "fontWeight": "400",
+          "lineHeight": "1.08"
+        },
+        "color": { "text": "#221b17" }
+      },
+      "link": {
+        "color": { "text": "#173d4c" }
+      },
+      "button": {
+        "border": { "radius": "0" },
+        "color": { "background": "#221b17", "text": "#fbf7ef" },
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--restrained-sans)",
+          "fontSize": "0.72rem",
+          "fontWeight": "700",
+          "letterSpacing": "0.12em",
+          "textTransform": "uppercase"
+        }
+      }
+    }
+  }
+}
+

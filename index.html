@@ -1,62 +1,52 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Balancing Diamonds</title>
-    <style>
-      :root {
-        color-scheme: light;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      body {
-        margin: 0;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        background: #f7f8fb;
-        color: #111827;
-      }
-      main {
-        text-align: center;
-        padding: 2rem;
-      }
-      h1 {
-        margin: 0 0 0.75rem;
-      }
-      p {
-        margin: 0;
-        color: #4b5563;
-      }
-      .error {
-        margin-top: 0.75rem;
-        color: #b91c1c;
-        font-weight: 600;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <h1>Balancing Diamonds</h1>
-      <p>The official website is live at balancingdiamonds.com.</p>
-      <p id="domain-error" class="error" hidden></p>
-    </main>
-    <script>
-      (function () {
-        const allowedHosts = new Set([
-          "balancingdiamonds.com",
-          "www.balancingdiamonds.com",
-          "localhost",
-          "127.0.0.1",
-        ]);
-
-        if (!allowedHosts.has(window.location.hostname)) {
-          const errorNode = document.getElementById("domain-error");
-          errorNode.textContent =
-            "Error: The site is configured for balancingdiamonds.com. Please verify domain and DNS settings.";
-          errorNode.hidden = false;
-        }
-      })();
-    </script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Balancing Diamonds - Theme Preview</title>
+  <link rel="stylesheet" href="wordpress-theme/balancing-diamonds/style.css">
+</head>
+<body class="home has-wordmark">
+<div class="site-frame">
+  <header class="site-header">
+    <div class="site-header__inner shell shell--wide">
+      <div class="site-branding"><a class="wordmark" href="#"><span class="wordmark__primary">Balancing Diamonds</span><span class="wordmark__secondary">An editorial maison</span></a></div>
+      <nav class="primary-navigation" aria-label="Primary navigation"><ul class="menu"><li><a href="#">Philosophy</a></li><li><a href="#architecture">Architecture</a></li><li><a href="#journal">Journal</a></li><li><a href="#letters">Letters</a></li><li><a href="#">Founder</a></li></ul></nav>
+      <button class="mode-toggle" type="button" aria-pressed="false"><span class="mode-toggle__sun">○</span><span class="mode-toggle__moon">◐</span></button>
+    </div>
+  </header>
+  <main class="site-main maison-home">
+    <section class="salon-hero">
+      <div class="salon-hero__inner shell shell--wide">
+        <div class="salon-hero__copy">
+          <p class="eyebrow"><span>A founder-led editorial and lifestyle house</span></p>
+          <h1>Every human being is as rare as a diamond.</h1>
+          <p class="salon-hero__lede">A private library for moving from performance to self-authorship, and for building a life whose rooms belong to the same person.</p>
+          <div class="button-row"><a class="button" href="#architecture">Begin with the Architecture <span>→</span></a><a class="text-link" href="#journal">Enter the library</a></div>
+        </div>
+        <div class="salon-hero__emblem"><div class="diamond-emblem"><span class="diamond-emblem__line diamond-emblem__line--one"></span><span class="diamond-emblem__line diamond-emblem__line--two"></span><span class="diamond-emblem__line diamond-emblem__line--three"></span><span class="diamond-emblem__center"></span></div><p>Worth · Voice · Truth<br>Balance · Dignity · Authorship</p></div>
+      </div>
+      <div class="salon-hero__folio shell shell--wide"><span>Maison No. 01</span><span>Los Angeles · Santa Barbara</span></div>
+    </section>
+    <section class="belief-band"><div class="shell shell--wide belief-band__inner"><p class="kicker">The founding belief</p><p>You do not become valuable. You remember that you already are.</p></div></section>
+    <section class="featured-work section-pad">
+      <div class="shell shell--wide">
+        <div class="section-heading section-heading--split"><div><p class="eyebrow">Selected from the journal</p><h2>The flagship work</h2></div><a class="text-link" href="#">View the complete archive</a></div>
+        <article class="feature-card feature-card--placeholder"><div class="feature-card__media"><span class="feature-card__monogram">BD</span></div><div class="feature-card__content"><p class="post-meta"><span>Founding essay</span><span>Volume I</span></p><h3>Every Human Being Is as Rare as a Diamond</h3><p>The origin of the idea, the meaning of the name, and the conviction that value precedes display, ranking, polish, and approval.</p><a class="text-link" href="#">Read the philosophy</a></div></article>
+      </div>
+    </section>
+    <section class="axis-section section-pad" id="architecture"><div class="shell shell--wide axis-section__layout"><div class="axis-section__intro"><p class="eyebrow">The inner transformation</p><h2>The Diamond Axis</h2><p>A movement from performance to self-authorship. Six acts of return, each beginning at the center: inherent worth.</p><a class="button button--outline" href="#">Explore the complete system</a></div><ol class="axis-list"><li><span>01</span><div><strong>Worth</strong><p>Remember what is already true.</p></div></li><li><span>02</span><div><strong>Voice</strong><p>Reclaim what performance silenced.</p></div></li><li><span>03</span><div><strong>Truth</strong><p>Identify what is authentic.</p></div></li><li><span>04</span><div><strong>Balance</strong><p>Return to center under pressure.</p></div></li><li><span>05</span><div><strong>Dignity</strong><p>Choose from self-respect.</p></div></li><li><span>06</span><div><strong>Authorship</strong><p>Build the life that reflects you.</p></div></li></ol></div></section>
+    <section class="rooms-section section-pad"><div class="shell shell--wide"><div class="section-heading"><p class="eyebrow">The outer application</p><h2>Enter the Four Rooms</h2><p>The places where self-authorship becomes visible.</p></div><div class="room-grid"><a class="room-card" href="#"><span class="room-card__number">01</span><h3>Self</h3><p>Identity, embodiment, emotional sovereignty, and becoming.</p><span class="room-card__arrow">→</span></a><a class="room-card" href="#"><span class="room-card__number">02</span><h3>House</h3><p>Home, ritual, beauty, hospitality, and private atmosphere.</p><span class="room-card__arrow">→</span></a><a class="room-card" href="#"><span class="room-card__number">03</span><h3>Work</h3><p>Vocation, ambition, money, leadership, and contribution.</p><span class="room-card__arrow">→</span></a><a class="room-card" href="#"><span class="room-card__number">04</span><h3>World</h3><p>Culture, relationships, travel, public presence, and belonging.</p><span class="room-card__arrow">→</span></a></div></div></section>
+    <section class="journal-section section-pad" id="journal"><div class="shell shell--wide"><div class="section-heading section-heading--split"><div><p class="eyebrow">Recent works</p><h2>From the journal</h2></div><a class="text-link" href="#">Enter the complete archive</a></div><div class="post-grid">
+      <article class="post-card"><div class="post-card__media"><span class="post-card__facet"></span></div><div class="post-card__content"><p class="post-meta"><span>Self</span><span>Canonical essay</span></p><h3>You Do Not Have to Perform Your Way Into Being Worthy</h3><p>A distinction between inherent worth and the exhausting rituals used to secure approval.</p><span class="text-link text-link--muted">In the reading room</span></div></article>
+      <article class="post-card"><div class="post-card__media"><span class="post-card__facet post-card__facet--2"></span></div><div class="post-card__content"><p class="post-meta"><span>Inner Order</span><span>Canonical essay</span></p><h3>Balance Is Alignment Under Pressure</h3><p>Balance is not perfect equilibrium. It is the practiced capacity to return to center.</p><span class="text-link text-link--muted">In the reading room</span></div></article>
+      <article class="post-card"><div class="post-card__media"><span class="post-card__facet post-card__facet--3"></span></div><div class="post-card__content"><p class="post-meta"><span>Authorship</span><span>Canonical essay</span></p><h3>A Life Does Not Become Yours by Accident</h3><p>A coherent life is consciously constructed through standards, choices, spaces, and conduct.</p><span class="text-link text-link--muted">In the reading room</span></div></article>
+    </div></div></section>
+    <section class="letters-section section-pad" id="letters"><div class="shell letters-section__inner"><p class="eyebrow">Private correspondence</p><h2>Letters from the Axis</h2><p>Considered observations on worth, voice, truth, balance, dignity, and the architecture of a life that increasingly belongs to you.</p><a class="button button--light" href="#">Receive the letters ↗</a><small>Written with intention. Sent with restraint.</small></div></section>
+    <section class="founder-section section-pad"><div class="shell shell--wide founder-section__layout"><div class="founder-section__label"><p class="eyebrow">The founding intelligence</p><p class="founder-monogram">DG</p></div><div class="founder-section__copy"><h2>Derek Green</h2><p>Balancing Diamonds began with a meditation in Santa Barbara and one clear idea: every human being is as rare as a diamond.</p><a class="text-link" href="#">Read the founder story</a></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="site-footer__inner shell shell--wide"><div class="site-footer__statement"><a class="footer-mark" href="#">Balancing Diamonds</a><p>Equal in worth. Rare in composition. Built for self-authorship.</p></div><nav class="footer-navigation"><ul class="menu"><li><a href="#">Philosophy</a></li><li><a href="#">Architecture</a></li><li><a href="#">Journal</a></li><li><a href="#">Letters</a></li></ul></nav><div class="site-footer__meta"><p>© 2026 Balancing Diamonds.</p><p>A Bodhi Oak house.</p></div></div></footer>
+</div>
+<script src="wordpress-theme/balancing-diamonds/assets/js/theme.js"></script>
+</body>
 </html>
