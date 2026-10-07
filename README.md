@@ -1,16 +1,21 @@
-# Balancing Diamonds
+# Balancing Diamonds — Static Maison V2
 
-The WordPress edition of Balancing Diamonds, a founder-led editorial and lifestyle house devoted to the movement from performance to self-authorship.
+BalancingDiamonds.com is being rebuilt as a static editorial site for Spaceship hosting.
 
-## Repository structure
+## Production architecture
+- Plain HTML
+- Plain CSS
+- Vanilla JavaScript
+- No WordPress
+- No PHP
+- No database
+- No build step
 
-- `index.html`: static visual preview for GitHub Pages.
-- `wordpress-theme/balancing-diamonds/`: complete WordPress theme source.
-- `downloads/balancing-diamonds.zip`: installable theme package for Spaceship WordPress.
+## Current source of truth
+Branch: `static-maison-v2`
 
-## Install
+## Deploy to Spaceship
+Upload the production files so `index.html` sits directly inside the domain document root (commonly `public_html`).
 
-Download the theme ZIP, then open **WordPress Admin > Appearance > Themes > Add New Theme > Upload Theme**. Activate the theme and use **Appearance > Maison Setup** to create the architecture from the Unified Master Blueprint.
-
-The theme uses standard posts for essays, so Ulysses can publish directly into the Journal with categories, tags, excerpts, and featured images.
-
+## Newsletter
+Newsletter UI is intentionally non-submitting until an email provider is connected. The site explicitly tells visitors enrollment is opening soon rather than silently losing addresses.
