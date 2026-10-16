@@ -1,0 +1,31 @@
+name: Accessibility check
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  axe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Serve site
+        run: npx --yes http-server . -p 8080 -s &
+      - name: Wait for server
+        run: npx --yes wait-on http://localhost:8080/index.html
+      - name: Run axe on every page
+        run: |
+          npx --yes @axe-core/cli \
+            http://localhost:8080/index.html \
+            http://localhost:8080/architecture.html \
+            http://localhost:8080/rooms.html \
+            http://localhost:8080/journal.html \
+            http://localhost:8080/letters.html \
+            http://localhost:8080/editions.html \
+            http://localhost:8080/about.html \
+            http://localhost:8080/journal/rare-as-a-diamond.html \
+            --tags wcag2a,wcag2aa --exit
